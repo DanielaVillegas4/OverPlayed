@@ -11,195 +11,10 @@
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="barra.css">
 
     <!-- Bootstrap Icons -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
-
-    <style>
-        body {
-            background-color: #130020;
-            color: #fff;
-            font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-        }
-
-        .navbar {
-            background-color: #1a032b;
-        }
-
-        .navbar-brand span:first-child {
-            color: #40ff7a;
-            margin-right: 2px;
-        }
-    </style>
-
-  <style>
-    body {
-      background-color: #130020;
-      color: #fff;
-      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-    }
-
-    .navbar {
-      background-color: #1a032b;
-    }
-
-    .navbar-brand span:first-child {
-      color: #40ff7a;
-      margin-right: 2px;
-    }
-
-    /* CARRUSEL IMAGENES */
-
-    .hero {
-      background: #1c0f2b;
-      min-height: 70vh;
-    }
-
-    .coverflow {
-      perspective: 1000px;
-    }
-
-    .coverflow .cover {
-      transform-style: preserve-3d;
-      transition: transform .35s ease, opacity .35s ease, filter .35s ease;
-      opacity: .75;
-      filter: saturate(.9);
-    }
-
-    .coverflow .cover img {
-      border-radius: .75rem;
-      box-shadow: 0 .75rem 2rem rgba(0, 0, 0, .45);
-    }
-
-    .coverflow .is-center {
-      transform: translateZ(80px) scale(1.05);
-      opacity: 1;
-      filter: none;
-      z-index: 3;
-    }
-
-    .coverflow .is-left {
-      transform: rotateY(18deg) translateX(12px) scale(.92);
-      z-index: 2;
-    }
-
-    .coverflow .is-right {
-      transform: rotateY(-18deg) translateX(-12px) scale(.92);
-      z-index: 2;
-    }
-
-    .coverflow .is-far {
-      transform: translateZ(-40px) scale(.85);
-      opacity: .55;
-      z-index: 1;
-    }
-
-
-    .carousel-indicators.position-static [data-bs-target] {
-      width: .65rem;
-      height: .65rem;
-      border-radius: 50%;
-    }
-
-    /* NAVBAR PLATAFORMAS + BUSCADOR */
-    /* NAVBAR center pill (plataformas + buscador) */
-.navbar {
-  background-color: #1a032b;
-  border-bottom: 1px solid rgb(255, 255, 255);
-}
-
-.platform-bar{
-  display:flex;
-  align-items:center;
-  gap:.55rem;
-  padding:.45rem .75rem;
-  border-radius:999px;
-  border:1px solid rgba(255, 255, 255, 0.956);
-  background: rgba(19,0,32,0.35);
-  backdrop-filter: blur(10px);
-  -webkit-backdrop-filter: blur(10px);
-  max-width: fit-content;
-  max-width: none;
-}
-
-.platform-item{
-  width: 36px;
-  height: 36px;
-  display:flex;
-  align-items:center;
-  justify-content:center;
-  border-radius:999px;
-  color:#fff;
-  text-decoration:none;
-  background: rgba(255,255,255,0.06);
-  border:1px solid rgba(255,255,255,0.12);
-  transition: transform .12s ease, background .12s ease;
-}
-
-.platform-item:hover{
-  background: rgba(255,255,255,0.10);
-  transform: translateY(-1px);
-}
-
-.platform-item i{
-  font-size: 1.15rem;
-}
-
-/* Colores por plataforma */
-.platform-item.pc i{
-  color: #fb972d; /* naranja PC */
-}
-
-.platform-item.playstation i{
-  color: #2507ba; /* azul PlayStation */
-}
-
-.platform-item.xbox i{
-  color: #00e676; /* verde Xbox */
-}
-
-.platform-item.nintendo i{
-  color: #f22727; /* rojo Nintendo */
-}
-
-.platform-sep{
-  width: 1px;
-  height: 22px;
-  background: rgb(255, 255, 255);
-}
-
-.platform-search{
-  display:flex;
-  align-items:center;
-  gap:.5rem;
-  padding: .15rem .4rem;
-  width: 180px;
-  max-width: 180px;
-}
-
-.platform-search i{
-  opacity: .85;
-}
-
-.platform-input{
-  width: 100%;
-  background: transparent;
-  border: 0;
-  outline: 0;
-  color: #fff;
-  font-size: .95rem;
-}
-
-.platform-input::placeholder{
-  color: rgba(255,255,255,0.65);
-}
-
-/* Ajuste responsive */
-@media (max-width: 991.98px){
-  .platform-bar{ max-width: 100%; }
-}
-
-  </style>
 </head>
 
 <body>
@@ -212,66 +27,66 @@
                 <img src="./img/logo_modo_oscuro_rosa.png" alt="OverPlayed Logo" width="170">
             </a>
 
-      <!-- Botón hamburguesa móvil -->
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar"
-        aria-controls="mainNavbar" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
+            <!-- Botón hamburguesa móvil -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar"
+                aria-controls="mainNavbar" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
 
-      <!-- Contenido colapsable -->
-      <div class="collapse navbar-collapse" id="mainNavbar">
-        <!-- Menú centrado -->
-        <!-- Centro (plataformas + buscador) -->
-        <div class="mx-lg-auto my-3 my-lg-0 d-flex justify-content-center w-100">
-          <div class="platform-bar">
-            <a class="platform-item active pc" href="#" title="PC">
-              <i class="bi bi-pc-display"></i>
-            </a>
+            <!-- Contenido colapsable -->
+            <div class="collapse navbar-collapse" id="mainNavbar">
+                <!-- Menú centrado -->
+                <!-- Centro (plataformas + buscador) -->
+                <div class="mx-lg-auto my-3 my-lg-0 d-flex justify-content-center w-100">
+                    <div class="platform-bar">
+                        <a class="platform-item active pc" href="#" title="PC">
+                            <i class="bi bi-pc-display"></i>
+                        </a>
 
-            <span class="platform-sep"></span>
+                        <span class="platform-sep"></span>
 
-            <a class="platform-item playstation" href="#" title="PlayStation">
-              <i class="bi bi-playstation"></i>
-            </a>
+                        <a class="platform-item playstation" href="#" title="PlayStation">
+                            <i class="bi bi-playstation"></i>
+                        </a>
 
-            <span class="platform-sep"></span>
+                        <span class="platform-sep"></span>
 
-            <a class="platform-item xbox" href="#" title="Xbox">
-              <i class="bi bi-xbox"></i>
-            </a>
+                        <a class="platform-item xbox" href="#" title="Xbox">
+                            <i class="bi bi-xbox"></i>
+                        </a>
 
-            <span class="platform-sep"></span>
+                        <span class="platform-sep"></span>
 
-            <a class="platform-item nintendo" href="#" title="Nintendo">
-              <i class="bi bi-nintendo-switch"></i>
-            </a>
+                        <a class="platform-item nintendo" href="#" title="Nintendo">
+                            <i class="bi bi-nintendo-switch"></i>
+                        </a>
 
-            <span class="platform-sep"></span>
+                        <span class="platform-sep"></span>
 
-            <div class="platform-search">
-              <i class="bi bi-search"></i>
-              <input type="search" class="platform-input" placeholder="Buscar" aria-label="Buscar">
+                        <div class="platform-search">
+                            <i class="bi bi-search"></i>
+                            <input type="search" class="platform-input" placeholder="Buscar" aria-label="Buscar">
+                        </div>
+                    </div>
+                </div>
+
+
+                <!-- Iconos derecha -->
+                <ul class="navbar-nav ms-lg-3">
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#"><i class="bi bi-cart"></i></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#"><i class="bi bi-heart"></i></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#"><i class="bi bi-person"></i></a>
+                    </li>
+                </ul>
             </div>
-          </div>
         </div>
-
-
-        <!-- Iconos derecha -->
-        <ul class="navbar-nav ms-lg-3">
-
-          <li class="nav-item">
-            <a class="nav-link" href="#"><i class="bi bi-cart"></i></a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#"><i class="bi bi-heart"></i></a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#"><i class="bi bi-person"></i></a>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </nav>
+    </nav>
 
 
     <!-- HERO + CARRUSEL -->
@@ -298,7 +113,7 @@
     </section>
 
     <!-- NAVBAR SECUNDARIA -->
-    <nav class="navbar green-nav">
+    <nav class="navbar green-nav" id="color-barra-segundaria">
         <div class="container justify-content-center">
             <ul class="navbar-nav flex-row green-nav-list">
                 <li class="nav-item"><a class="nav-link" href="#">Ofertas</a></li>

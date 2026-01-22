@@ -369,3 +369,8 @@ input:nth-of-type(5):checked~main#carousel {
 .green-nav .nav-link.active::after {
     width: 100%;
 }
+
+#color-barra-segundaria{
+    background-color: #DB009D;
+    border-style: none;
+}
