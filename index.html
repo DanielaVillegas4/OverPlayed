@@ -1,94 +1,76 @@
 <!doctype html>
 <html lang="es">
 
-
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>OverPlayed - FC26</title>
+  <title>OverPlayed - FC26</title>
 
-    <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="index.css">
-    <link rel="stylesheet" href="barra.css">
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="index.css">
+  <link rel="stylesheet" href="barra.css">
 
-    <!-- Bootstrap Icons -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+  <!-- Bootstrap Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
 </head>
 
 <body>
 
-    <!-- NAVBAR -->
-    <nav class="navbar navbar-expand-lg navbar-dark">
-        <div class="container-fluid">
-            <!-- Logo / Marca -->
-            <a class="navbar-brand d-flex align-items-center" href="#">
-                <img src="./img/logo_modo_oscuro_rosa.png" alt="OverPlayed Logo" width="170">
+  <!-- NAVBAR -->
+  <nav class="navbar navbar-expand-lg navbar-dark">
+    <div class="container-fluid">
+      <!-- Logo / Marca -->
+      <a class="navbar-brand d-flex align-items-center" href="#">
+        <img src="./img/logo_modo_oscuro_rosa.png" alt="OverPlayed Logo" width="170">
+      </a>
+
+      <!-- Botón hamburguesa móvil -->
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar"
+        aria-controls="mainNavbar" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <!-- Contenido colapsable -->
+      <div class="collapse navbar-collapse" id="mainNavbar">
+        <!-- Menú centrado -->
+        <!-- Centro (plataformas + buscador) -->
+        <div class="mx-lg-auto my-3 my-lg-0 d-flex justify-content-center w-100">
+          <div class="platform-bar">
+            <a class="platform-item active pc" href="#" title="PC">
+              <i class="bi bi-pc-display"></i>
             </a>
 
-            <!-- Botón hamburguesa móvil -->
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar"
-                aria-controls="mainNavbar" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
+            <span class="platform-sep"></span>
 
-            <!-- Contenido colapsable -->
-            <div class="collapse navbar-collapse" id="mainNavbar">
-                <!-- Menú centrado -->
-                <!-- Centro (plataformas + buscador) -->
-                <div class="mx-lg-auto my-3 my-lg-0 d-flex justify-content-center w-100">
-                    <div class="platform-bar">
-                        <a class="platform-item active pc" href="#" title="PC">
-                            <i class="bi bi-pc-display"></i>
-                        </a>
+            <a class="platform-item playstation" href="#" title="PlayStation">
+              <i class="bi bi-playstation"></i>
+            </a>
 
-                        <span class="platform-sep"></span>
+            <span class="platform-sep"></span>
 
-                        <a class="platform-item playstation" href="#" title="PlayStation">
-                            <i class="bi bi-playstation"></i>
-                        </a>
+            <a class="platform-item xbox" href="#" title="Xbox">
+              <i class="bi bi-xbox"></i>
+            </a>
 
-                        <span class="platform-sep"></span>
+            <span class="platform-sep"></span>
 
-                        <a class="platform-item xbox" href="#" title="Xbox">
-                            <i class="bi bi-xbox"></i>
-                        </a>
+            <a class="platform-item nintendo" href="#" title="Nintendo">
+              <i class="bi bi-nintendo-switch"></i>
+            </a>
 
-                        <span class="platform-sep"></span>
+            <span class="platform-sep"></span>
 
-                        <a class="platform-item nintendo" href="#" title="Nintendo">
-                            <i class="bi bi-nintendo-switch"></i>
-                        </a>
-
-                        <span class="platform-sep"></span>
-
-                        <div class="platform-search">
-                            <i class="bi bi-search"></i>
-                            <input type="search" class="platform-input" placeholder="Buscar" aria-label="Buscar">
-                        </div>
-                    </div>
-                </div>
-
-
-                <!-- Iconos derecha -->
-                <ul class="navbar-nav ms-lg-3">
-
-                    <li class="nav-item">
-                        <a class="nav-link" href="#"><i class="bi bi-cart"></i></a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#"><i class="bi bi-heart"></i></a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#"><i class="bi bi-person"></i></a>
-                    </li>
-                </ul>
+            <div class="platform-search">
+              <i class="bi bi-search"></i>
+              <input type="search" class="platform-input" placeholder="Buscar" aria-label="Buscar">
             </div>
+          </div>
         </div>
-    </nav>
 
 
+<<<<<<< HEAD
     <!-- HERO + CARRUSEL -->
     <section class="hero">
         <div class="container py-4">
@@ -130,11 +112,181 @@
     <div class="gamobot position-fixed bottom-0 end-0 mb-3 me-3">
         <span class="icon">🤖</span>
         GAMEBOT
+=======
+        <!-- Iconos derecha -->
+        <ul class="navbar-nav ms-lg-3">
+          <li class="nav-item">
+            <a class="nav-link" href="#"><i class="bi bi-cart fs-4"></i></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#"><i class="bi bi-heart fs-4"></i></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#"><i class="bi bi-person fs-4"></i></a>
+          </li>
+        </ul>
+      </div>
+>>>>>>> main
     </div>
+  </nav>
 
 
-    <!-- Bootstrap JS -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- HERO + CARRUSEL -->
+  <section class="hero">
+    <div class="container py-4">
+      <div class="carousel-3d">
+
+        <input type="radio" name="position">
+        <input type="radio" name="position">
+        <input type="radio" name="position" checked>
+        <input type="radio" name="position">
+        <input type="radio" name="position">
+
+        <main id="carousel">
+          <div class="item"><img src="img/pokemon.png"></div>
+          <div class="item"><img src="img/nightmares.png"></div>
+          <div class="item"><img src="img/justdance.png"></div>
+          <div class="item"><img src="img/fifa.png"></div>
+          <div class="item"><img src="img/battlefield.png"></div>
+        </main>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- NAVBAR SECUNDARIA -->
+  <nav class="navbar green-nav" id="color-barra-segundaria">
+    <div class="container justify-content-center">
+      <ul class="navbar-nav flex-row green-nav-list">
+        <li class="nav-item"><a class="nav-link" href="#">Ofertas</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">Novedades</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">Próximamente</a></li>
+        <li class="nav-item"><a class="nav-link active" href="#">Sobre nosotros</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">Populares</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">Comunidad</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">FAQ</a></li>
+      </ul>
+    </div>
+  </nav>
+  <!-- BOTÓN GAMEBOT -->
+<button class="gamebot-fab position-fixed bottom-0 end-0 mb-3 me-3" type="button" aria-label="Gamebot">
+  <img src="./img/Gamebot_rosa.png" alt="Gamebot" class="gamebot-avatar">
+</button>
+
+
+  <!-- FOOTER -->
+  <footer class="footer-section footer-overplayed">
+    <div class="container py-4">
+
+      <!-- TOP CONTACT (3 bloques) -->
+      <div class="row g-4 py-3 align-items-center border-bottom border-white border-opacity-25">
+
+        <div class="col-md-4">
+          <div class="d-flex align-items-center gap-3">
+            <i class="bi bi-geo-alt-fill footer-cta-icon"></i>
+            <div>
+              <div class="fw-semibold text-white">Encuéntranos</div>
+              <div class="text-white-50 small">Alcalá de Henares</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="d-flex align-items-center gap-3">
+            <i class="bi bi-telephone-fill footer-cta-icon"></i>
+            <div>
+              <div class="fw-semibold text-white">Llámanos</div>
+              <div class="text-white-50 small">999 999 999</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="d-flex align-items-center gap-3">
+            <i class="bi bi-envelope-fill footer-cta-icon"></i>
+            <div>
+              <div class="fw-semibold text-white">Escríbenos</div>
+              <div class="text-white-50 small">overplayed@info.com</div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- MAIN CONTENT -->
+      <div class="row gy-4 pt-4 pb-3">
+
+        <!-- LEFT: text + social -->
+        <div class="col-lg-4">
+          <p class="footer-desc mb-3">
+            OverPlayed: videojuegos, noticias, guías y ofertas diarias.
+            Únete a nuestra comunidad y no te pierdas ninguna novedad.
+          </p>
+
+          <div class="fw-semibold text-white mb-2">Síguenos</div>
+
+          <div class="d-flex gap-2">
+            <a href="#" class="glow-btn" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
+            <a href="#" class="glow-btn delay-1" aria-label="Twitter"><i class="bi bi-twitter-x"></i></a>
+            <a href="#" class="glow-btn delay-2" aria-label="Google"><i class="bi bi-google"></i></a>
+          </div>
+        </div>
+
+        <!-- MIDDLE: links -->
+        <div class="col-lg-4 col-md-6">
+          <h6 class="footer-title text-white mb-3">Enlaces útiles</h6>
+
+          <div class="row">
+            <div class="col-6">
+              <ul class="list-unstyled m-0 footer-links">
+                <li><a href="#">Inicio</a></li>
+                <li><a href="#">Sobre nosotros</a></li>
+                <li><a href="#">Contacto</a></li>
+              </ul>
+            </div>
+
+            <div class="col-6">
+              <ul class="list-unstyled m-0 footer-links">
+                <li><a href="#">Equipo</a></li>
+                <li><a href="#">Últimas noticias</a></li>
+                <li><a href="#">Soporte</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <!-- RIGHT: subscribe -->
+        <div class="col-lg-4 col-md-6">
+          <h6 class="footer-title text-white mb-3">Suscríbete</h6>
+
+          <p class="footer-desc mb-3">
+            No te pierdas ofertas y novedades. Suscríbete:
+          </p>
+
+          <div class="input-group">
+            <input type="email" class="form-control footer-input" placeholder="Correo electrónico"
+              aria-label="Correo electrónico">
+            <button class="btn footer-send-btn" type="button" aria-label="Enviar">
+              <i class="bi bi-send-fill"></i>
+            </button>
+          </div>
+        </div>
+
+      </div>
+
+      <hr class="border-white border-opacity-25 my-3">
+
+      <!-- COPYRIGHT -->
+      <div class="text-center text-white-50 small pb-2">
+        © 2025 OverPlayed. Todos los derechos reservados.
+      </div>
+
+    </div>
+  </footer>
+
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 
 </html>
