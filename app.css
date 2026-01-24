@@ -614,7 +614,7 @@ body {
 ========================= */
 .ofertas-page {
   background-color: var(--bg-primary);
-  min-height: 100vh;
+  min-height: 70vh;
 }
 
 
